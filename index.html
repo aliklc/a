@@ -9,13 +9,17 @@
         body {
             font-family: 'Dancing Script', cursive;
             text-align: center;
-            background-color: #ffebef;
+            background: url('https://www.transparenttextures.com/patterns/diamond-sky.png'), linear-gradient(135deg, #f5c1e6, #f67280); /* Desenli ve geçişli arka plan */
             color: #d63384;
+            background-size: cover;
+            background-attachment: fixed; /* Arka planın sabit kalmasını sağlar */
+            background-repeat: no-repeat;
         }
         h1 {
             margin-top: 20px;
             font-size: 36px;
             font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Başlığa hafif gölge ekleyelim */
         }
         .gallery {
             position: relative;
@@ -26,6 +30,7 @@
             padding: 10px;
             background-color: white;
             overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Galeri kutusuna gölge ekleyelim */
         }
         .gallery img {
             width: 100%;
@@ -64,6 +69,14 @@
         .heart {
             font-size: 30px;
             margin-top: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Kalp emojilerine gölge ekleyelim */
+        }
+        #continue-text {
+            font-size: 20px;
+            font-style: italic;
+            margin-top: 20px;
+            color: #e60073;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Yazıya hafif gölge ekleyelim */
         }
     </style>
 </head>
